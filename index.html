@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dev tools</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="block" class="number">
+        42
+    </div>
+<script>
+    function setCoords(event) {
+      document.getElementById('number_block').style.left = `${event.clientX}px`
+      document.getElementById('number_block').style.top = `${event.clientY}px`
+    }
+
+    function run() {
+      window.addEventListener('mousemove', setCoords)
+    }
+
+    function stop() {
+      window.removeEventListener('mousemove', setCoords)
+    }
+</script>
+</body>
+</html>

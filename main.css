@@ -1,0 +1,38 @@
+.number {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-family: Arial;
+    margin-left: -21px;
+    margin-top: -21px;
+    font-size: 42px;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.number-hover:hover {
+    color: #7f42e1;
+    transform: rotate(360deg) scale(1.4);
+}
+
+
+.paper {
+    transform: rotateX(51deg) rotateZ(43deg);
+    transform-style: preserve-3d;
+    border-radius: 32px;
+    padding: 40px;
+    border: 2px solid #7f42e1;
+    box-shadow: 1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition: all .4s ease-in-out;
+}
+.paper:hover {
+    transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
+    box-shadow: 1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
